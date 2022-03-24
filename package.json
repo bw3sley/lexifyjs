@@ -1,0 +1,39 @@
+{
+  "name": "lexifyjs",
+  "version": "1.0.0",
+  "description": "lexifyjs is a library for converting numbers into words in brazilian portuguese.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "babel src -d dist && uglifyjs dist/index.js -o dist/index.min.js",
+    "test": "vitest run"
+  },
+  "keywords": [
+    "lexifyjs",
+    "number-to-words",
+    "brazilian-portuguese",
+    "numbers",
+    "words",
+    "conversion"
+  ],
+  "author": "Wesley Junior <bw3sley@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bw3sley/lexifyjs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bw3sley/lexifyjs/issues"
+  },
+  "homepage": "https://github.com/bw3sley/lexifyjs",
+  "devDependencies": {
+    "@babel/cli": "^7.24.8",
+    "@babel/core": "^7.24.9",
+    "@babel/preset-env": "^7.24.8",
+    "uglify-js": "^3.19.0",
+    "vitest": "^2.0.4"
+  }
+}
